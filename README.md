@@ -1,45 +1,70 @@
-# Progetto ITADATAhack 2023: Classificazione delle leggi dell'Unione Europea in Capitoli e Sottocapitoli
+# ITADATAhack 2023 Project: Classification of European Union Laws into Chapters and Subchapters
 
-Il codice prodotto dal mio team e da me ci ha permesso di raggiungere il secondo posto nella classifica finale dell'ITADATAhack 2023, organizzato da Open Data Playground.
+The code produced by my team and myself allowed us to reach second place in the final classification of the ITADATAhack 2023, organised by Open Data Playground.
 
-## Giorno 1: Classificazione delle Leggi in 20 Capitoli
+The event will be open to teams of students from Italian Universities and will be focussed on a multi-label classification and data storytelling task. 
+The goal is to engage students in a competition that allows them to showcase their skills in data analysis and modelling, by playing with real datasets.
+By participating in ITADATAhack 2023 as a player, you will be able to analyse unique data about the Italian STEM market, and work innovatively with your team members.
+By sponsoring ITADATAhack 2023 competition, you will be able to increase the visibility of your brand within the Italian STEM community.
 
-- Nel primo giorno della sfida, abbiamo affrontato la classificazione delle leggi in base a 20 capitoli principali.
-- Abbiamo utilizzato tecniche di analisi testuale, elaborazione del linguaggio naturale (NLP) e un algoritmo di machine learning per assegnare ogni legge al capitolo corrispondente.
-- Il contenuto del lavoro è presente nel file PA.ipynb.
-- Le previsioni prodotte sono presenti nel file PA.csv.
+# Day 1
 
-## Giorno 2: Classificazione delle Leggi in Capitoli e Sottocapitoli
+## About the problem 
 
-- Nel secondo giorno, abbiamo portato il nostro progetto al livello successivo. Oltre alla classificazione dei capitoli principali, abbiamo implementato la suddivisione delle leggi in sottocapitoli. Ogni legge è stata assegnata a un capitolo principale e a uno specifico sottocapitolo.
-- Il contenuto del lavoro è presente nel file MLP.ipynb.
-- Le previsioni prodotte sono presenti nel file MLP.csv.
+The problem will ask you to create a classification of legal documents representing laws in force in the European Union (EU) with respect to the directory they belong to.
+The "Directory of legal acts", i.e. the hierarchy of rules in force in the EU, includes 20 main chapters:
+Each chapter is divided into sub-chapters at various levels. The chapters have been coded with integers from 1 to 20 and represent the target of the classification, which must process the text of the law and/or the normative references and predict the chapter to which it belongs.
 
-## Giorno 3: Classificazione delle Leggi in Più Sottocapitoli
+## Solution: Classification of Laws in 20 Chapters
 
-- Nel terzo giorno, abbiamo ulteriormente migliorato il sistema di classificazione. Ora ogni legge può appartenere a più di un sottocapitolo, consentendo una categorizzazione più dettagliata e flessibile delle leggi.
-- Il contenuto del lavoro è presente nel file CS.ipynb.
-- Le previsioni prodotte sono presenti nel file CS.csv.
+- On the first day of the challenge, we tackled the classification of laws into 20 main chapters.
+- We used textual analysis techniques, natural language processing (NLP) and a machine learning algorithm to assign each law to the corresponding chapter.
+- The content of the work can be found in the file PA.ipynb.
+- The predictions produced are in the file PA.csv.
+
+# Day 2
+## About the problem 
+The problem will ask you to create a classification of legal documents representing laws in force in the European Union (EU) with respect to the directory they belong to.
+The "Directory of legal acts", i.e. the hierarchy of rules in force in the EU, includes 20 main chapters, divided into various sub-chapters:
+The sub-chapters at depth 2 have been coded with strings separated by a hyphen (for example '01-07', '02-10') which represent the target of the classification, the purpose of which is to process the text of the law and/or the regulatory references and predict the sub-chapter it belongs to.
+
+## Solution: Classification of Laws into Chapters and Sub-Chapters
+
+- On the second day, we took our project to the next level. In addition to the classification of the main chapters, we implemented the division of laws into sub-chapters. Each law was assigned to a main chapter and a specific sub-chapter.
+- The content of the work can be found in the MLP.ipynb file.
+- The predictions produced are in the MLP.csv file.
+
+# Day 3:
+## About the problem: 
+The problem will ask you to create a classification of legal documents representing laws in force in the European Union (EU) with respect to the subdirectories to which they belong.
+The "Directory of legal acts", i.e. the hierarchy of rules in force in the EU, includes 20 main chapters, divided into various sub-chapters.
+The sub-chapters at depth 2 have been coded with strings separated by a hyphen (for example '01-07', '02-10') which represent the target of the classification, whose purpose is to process the law text and predict the sub-chapters of membership. In this case, we are dealing with a multilabel classification problem, given that each law can be included in several sub-chapters and the belonging of a law to a sub-chapter is not exclusive.
+
+## Solution: Classification of Laws into Multiple Subchapters
+
+- On the third day, we further improved the classification system. Now each law can belong to more than one sub-chapter, allowing for a more detailed and flexible categorisation of laws.
+- The content of the work can be found in the file CS.ipynb.
+- The forecasts produced are in the CS.csv file.
   
-## Strumenti Utilizzati
+## Tools Used
 
 - Python
-- Librerie NLP 
-- Algoritmi di Machine Learning
-- Jupyter Notebook per l'analisi e la visualizzazione dei dati
+- NLP libraries 
+- Machine Learning Algorithms
+- Jupyter Notebook for data analysis and visualisation
 
-## Come Eseguire il Codice
+## How to Execute the Code
 
-- Clona questo repository sul tuo computer.
-- Assicurati di avere tutte le dipendenze e le librerie installate.
-- Esegui i notebook Jupyter per eseguire l'analisi e la classificazione delle leggi.
+- Clone this repository on your computer.
+- Make sure you have all dependencies and libraries installed.
+- Run Jupyter Notebooks to perform analysis and classification.
 
-## Contributi
+## Contributions
 
-Siamo aperti a contributi e suggerimenti per migliorare questo progetto. Se hai idee o miglioramenti da condividere, sentiti libero di aprire una "issue" o inviare una "pull request".
+We are open for contributions and suggestions to improve this project. If you have ideas or improvements to share, feel free to open an "issue" or send a "pull request".
 
-## Ringraziamenti
+## Acknowledgements
 
-Un grande ringraziamento ai miei colleghi, Giuseppe Genito e Raffaele Ferriero, per il supporto e la collaborazione in questo progetto.
+A big thank you to my colleagues, Rosaria Leone and Raffaele Ferriero, for their support and collaboration in this project.
 
-Buon lavoro e buona codifica!
+Good work and good coding!
